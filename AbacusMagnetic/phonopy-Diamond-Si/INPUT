@@ -1,0 +1,19 @@
+INPUT_PARAMETERS
+calculation scf
+basis_type lcao
+symmetry 0
+ecutwfc 100
+scf_thr 1e-09
+scf_nmax 200
+kspacing 0.10
+pseudo_rcut 10
+pseudo_mesh 1
+ks_solver genelpa
+relax_nmax 100
+force_thr 0.001
+stress_thr 0.5
+smearing_method gauss
+smearing_sigma 0.015
+cal_force 1
+cal_stress 1
+out_chg -1

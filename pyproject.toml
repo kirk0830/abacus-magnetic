@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "abacus-magnetic"
+version = "0.1.0"
+description = "workflow toolkits for performing the crossing-test on predicting various magnetic properties by ABACUS and DeePSPIN machine learning model"
+authors = ["huangyk@aisi.ac.cn"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "AbacusMagnetic"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+numpy = "*"
+matplotlib = "*"
+phonopy = "*"
+pymatgen = "*"
+
+[tool.poetry.scripts]
+abacus-magnetic = "AbacusMagnetic.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
